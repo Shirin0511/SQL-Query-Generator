@@ -72,11 +72,14 @@ Example input:
 
 ```text
 Schema: Name(text), Age(number), Salary(number), Department(text)
-Question: What is the salary of Matthew?```
+Question: What is the salary of Matthew?
+```
 
 
 Example Output:
-```SELECT Salary FROM table WHERE Name = 'Matthew'```
+```
+SELECT Salary FROM table WHERE Name = 'Matthew'
+```
 
 ## SQL Validation
 
