@@ -118,8 +118,6 @@ print(generate_sql(schema, question))
 - Supports **single-table SQL only**
 - No support for `GROUP BY`, joins, or nested queries
 - Limited reliability for `AVG` due to dataset imbalance
-- Weak semantic grounding for COUNT column selection
-- No SQL execution or database integration
 
 These limitations stem from **dataset constraints**, not implementation errors.
 
@@ -132,5 +130,4 @@ These limitations stem from **dataset constraints**, not implementation errors.
   - `GROUP BY`
   - Joins and nested SQL
 - Improve aggregation grounding
-- Add an optional SQL execution layer
 - Build an interactive UI using **Streamlit** or **Gradio**
