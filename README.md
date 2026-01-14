@@ -59,9 +59,10 @@ SQL Query Output
 SQL Syntax Validation
 
 
+
 ---
 
-## Input-Output Format
+## Input–Output Format
 
 The model takes:
 - **Schema**: column names with data types
@@ -73,11 +74,9 @@ Example input:
 Schema: Name(text), Age(number), Salary(number), Department(text)
 Question: What is the salary of Matthew?
 
+
 Example Output:
 SELECT Salary FROM table WHERE Name = 'Matthew'
-
----
-
 
 ## SQL Validation
 
@@ -95,24 +94,21 @@ def is_valid_sql(sql):
 
 ---
 
-
-## **Running Inference**
+## Running Inference
 
 Use the fine-tuned model to generate SQL by providing a table schema and a natural language question.
 
-```python
 schema = "Name(text), Age(number), Salary(number), Department(text)"
 question = "What is the salary of Matthew?"
 
 print(generate_sql(schema, question))
 
+
 ---
 
-##  **Limitations**
 
-This project is intentionally scoped to the capabilities of the **WikiSQL dataset**.
+## Limitations
 
-### Current Limitations
 - Supports **single-table SQL only**
 - No support for `GROUP BY`, joins, or nested queries
 - Limited reliability for `AVG` due to dataset imbalance
@@ -123,7 +119,7 @@ These limitations stem from **dataset constraints**, not implementation errors.
 
 ---
 
-## **Future Work**
+## Future Work
 
 - Fine-tune on the **Spider dataset** to support:
   - Multi-table queries
@@ -132,5 +128,3 @@ These limitations stem from **dataset constraints**, not implementation errors.
 - Improve aggregation grounding
 - Add an optional SQL execution layer
 - Build an interactive UI using **Streamlit** or **Gradio**
-
-
