@@ -72,11 +72,11 @@ Example input:
 
 ```text
 Schema: Name(text), Age(number), Salary(number), Department(text)
-Question: What is the salary of Matthew?
+Question: What is the salary of Matthew?```
 
 
 Example Output:
-SELECT Salary FROM table WHERE Name = 'Matthew'
+```SELECT Salary FROM table WHERE Name = 'Matthew'```
 
 ## SQL Validation
 
@@ -90,7 +90,7 @@ The project includes **lightweight SQL syntax validation** using `sqlparse`.
 import sqlparse
 
 def is_valid_sql(sql):
-    return len(sqlparse.parse(sql)) > 0
+    return len(sqlparse.parse(sql)) > 0```
 
 ---
 
@@ -98,10 +98,10 @@ def is_valid_sql(sql):
 
 Use the fine-tuned model to generate SQL by providing a table schema and a natural language question.
 
-schema = "Name(text), Age(number), Salary(number), Department(text)"
+```schema = "Name(text), Age(number), Salary(number), Department(text)"
 question = "What is the salary of Matthew?"
 
-print(generate_sql(schema, question))
+print(generate_sql(schema, question))```
 
 
 ---
