@@ -44,19 +44,22 @@ This project explores how **large language models** can be fine-tuned to automat
 
 ## System Architecture
 
+```text
 Natural Language Question
-+
-Table Schema
-↓
-Prompt Construction
-↓
-T5 Tokenizer
-↓
-Fine-tuned T5 Model
-↓
-SQL Query Output
-↓
-SQL Syntax Validation
+        +
+     Table Schema
+        ↓
+   Prompt Construction
+        ↓
+     T5 Tokenizer
+        ↓
+ Fine-tuned T5 Model
+        ↓
+   SQL Query Output
+        ↓
+ SQL Syntax Validation
+```
+
 
 
 
@@ -80,6 +83,8 @@ Example Output:
 ```
 SELECT Salary FROM table WHERE Name = 'Matthew'
 ```
+
+---
 
 ## SQL Validation
 
